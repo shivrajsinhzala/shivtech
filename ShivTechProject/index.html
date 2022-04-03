@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheShivTech</title>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+
+  <body>
+
+    <header>
+
+      <a href="#" class="logo">The ShivTech</a>
+
+      <div id="buttons-container">
+        <ul class="buttons-container aaaa" id="hamburger" style="display: none;">
+
+          <li><a href="#" class="btn active">Home</a></li>
+
+          <li><a href="#sec" class="btn">Our Service</a></li>
+
+          <li><a href="#about" class="btn">About</a></li>
+
+          <li><a href="#contact" class="btn">Contact Us</a></li>
+
+        </ul>
+      </div>
+
+      <div onclick="myFunction()" class="hammenu">
+        <label for="check">
+          <input type="checkbox" id="check" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+    </header>
+
+    <section id="section">
+      <div class="img">
+        <img src="stars.png" alt="" id="stars">
+        <img src="moon.png" alt="" id="moon">      
+        <img src="mountains_behind.png" alt="" id="mountains_behind"> 
+        <img src="mountains_front.png" alt="" id="mountains_front">
+      </div>
+      <h2 id="text">TheShivTech</h2>
+
+      <a href="#sec" id="btn">Explore</a>
+
+    </section>
+
+    <section class="sec" id="sec">
+      <div class="our-services-container">
+        <h2 class="our-services">Our Services</h2>
+      </div>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nobis
+        vitae suscipit facere labore officia dolor temporibus nihil delectus
+        explicabo laboriosam laborum odit fugiat veritatis, cupiditate sapiente
+        consectetur recusandae consequatur minima maxime quae ad ipsa tempore
+        mollitia! Nemo nihil id possimus fuga veritatis et libero saepe
+        voluptate nobis. Fugiat, natus!<br><br>Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Est molestias, adipisci ipsa at accusamus
+        et placeat dolorum voluptatum corporis ab.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nobis
+        vitae suscipit facere labore officia dolor temporibus nihil delectus
+        explicabo laboriosam laborum odit fugiat veritatis, cupiditate sapiente
+        consectetur recusandae consequatur minima maxime quae ad ipsa tempore
+        mollitia! Nemo nihil id possimus fuga veritatis et libero saepe
+        voluptate nobis. Fugiat, natus!<br><br>Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Est molestias, adipisci ipsa at accusamus
+        et placeat dolorum voluptatum corporis ab.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nobis
+        vitae suscipit facere labore officia dolor temporibus nihil delectus
+        explicabo laboriosam laborum odit fugiat veritatis, cupiditate sapiente
+        consectetur recusandae consequatur minima maxime quae ad ipsa tempore
+        mollitia! Nemo nihil id possimus fuga veritatis et libero saepe
+        voluptate nobis. Fugiat, natus!<br><br>Lorem ipsum dolor sit amet
+        consectetu
+
+    </section>
+
+    <section class="sec" id="about">
+        <div class="about-us-container">
+          <h2 class="about-us">About Us</h2>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+          nobis
+          vitae suscipit facere labore officia dolor temporibus nihil delectus
+          explicabo laboriosam laborum odit fugiat veritatis, cupiditate
+          sapiente
+          consectetur recusandae consequatur minima maxime quae ad ipsa tempore
+          mollitia! Nemo nihil id possimus fuga veritatis et libero saepe
+          voluptate nobis. Fugiat, natus!<br><br>Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Est molestias, adipisci ipsa at
+          accusamus
+          et placeat dolorum voluptatum corporis ab.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nobis
+          vitae suscipit facere labore officia dolor temporibus nihil delectus
+          explicabo laboriosam laborum odit fugiat veritatis, cupiditate
+          sapiente
+          consectetur recusandae consequatur minima maxime quae ad ipsa tempore
+          mollitia! Nemo nihil id possimus fuga veritatis et libero saepe
+          voluptate nobis. Fugiat, natus!<br><br>Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Est molestias, adipisci ipsa at
+          accusamus
+          et placeat dolorum voluptatum corporis ab.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nobis
+      </section>
+      <section class="sec" id="contact">
+          <div class="contact-us-container">
+            <h2 class="contact-us">Contact Us</h2>
+          </div>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+            nobis
+            vitae suscipit facere labore officia dolor temporibus nihil delectus
+            explicabo laboriosam laborum odit fugiat veritatis, cupiditate
+            sapiente
+            consectetur recusandae consequatur minima maxime quae ad ipsa
+            tempore
+            mollitia! Nemo nihil id possimus fuga veritatis et libero saepe
+            voluptate nobis. Fugiat, natus!<br><br>Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Est molestias, adipisci ipsa at
+            accusamus
+            et placeat dolorum voluptatum corporis ab.
+            .</p>
+          <div class="download-button"> <a href="ShivTechProject.7z"
+              download=""> Download RAW Material</a></div>
+
+
+      </section>
+
+
+
+        <script>
+       
+     let moon = document.getElementById("moon");
+       
+     let stars = document.getElementById("stars");
+       
+     let mountains_behind = document.getElementById("mountains_behind");
+       
+    let text = document.getElementById("text");
+    
+        let mountains_front = document.getElementById("mountains_front");
+     
+       let btn = document.getElementById("btn");
+
+    
+        window.addEventListener('scroll',()=>{
+          
+      let value = window.scrollY;
+          
+      stars.style.left = value*0.25 + 'px';
+       
+         moon.style.top = value*1.02 + 'px';
+    
+          moon.style.left = value*0.55 + 'px';
+  
+            mountains_behind.style.left = value*0.25 + 'px';
+     
+           text.style.marginRight = value*3.65 + 'px';
+              
+            btn.style.marginTop = value*1.25+ 'px';
+    
+            // header.style.top=value*0.2+"px";
+     
+       });
+       
+ </script>
+        <!-- <script>
+  // Add active class to the current button (highlight it)
+  var header = document.getElementById("buttons-container");
+  var btns = header.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+    });
+  }
+  </script> -->
+<script>
+     function myFunction() {
+    var x = document.getElementById('hamburger')
+    if (x.style.display === "none") {
+      x.style.display = "flex";
+    } else {
+      x.style.display = "none";
+    }
+  } 
+</script>
+  <!-- <script>
+    function myFunction() {
+    let element = document.getElementById("buttons-container");
+    element.classList.toggle("aaaa");
+    console.log('click')
+  } 
+  </script> -->
+        <!--Start of Tawk.to Script-->
+        <script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/6193b5eb6bb0760a4942db79/1fkkft8at';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+        <!--End of Tawk.to Script-->
+      </body>
+
+    </html>
